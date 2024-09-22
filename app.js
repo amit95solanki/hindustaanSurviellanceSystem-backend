@@ -20,6 +20,7 @@ const Port = process.env.PORT || 8000;
 const URI = process.env.DB_URL || "mongodb://localhost:27017/mydatabase";
 export const myCache = new NodeCache();
 // Connect to the databas
+// start
 async function main() {
   await mongoose.connect(URI, {
     dbName: "Ecommerce",
