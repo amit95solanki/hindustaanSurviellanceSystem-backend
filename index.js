@@ -29,7 +29,7 @@ async function main() {
 }
 main().catch((err) => console.log(err));
 app.use(cors());
-app.get("/", (req, res) => {
+app.get("/hello", (req, res) => {
   res.send("API Working with /api/v1");
 });
 
